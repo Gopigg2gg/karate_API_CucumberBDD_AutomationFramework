@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("2c83bf2f-33be-48ce-891b-a91f22221982",{name:"anusha"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:"intellij:1.7.7.361-211"});
+  }
+});
+</script>
+
+    <title>src.test.java.features.postLeads</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-08-31 01:19:13 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:25]"><span>[1:25]</span> <span>Create record with new parent and patient data</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:40]"><span>[2:40]</span> <span>Create record with existing parent and patient data</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:50]"><span>[3:50]</span> <span>Create record with incorrect parent and patient data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/postLeads.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Post Leads API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:25]</span>
+                <span class="scenario-name">Create record with new parent and patient data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7974</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readProps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def props = readProps(&#39;file:src/test/resources/utils/karate.properties&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayloadNew = read(props.payloadNew)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:25]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def signIn = call read(props.bearerFeature)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def authToken = signIn.authToken</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref bg-step">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getRandomNum =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.19">function(max){ return Math.floor(Math.random() * max) }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomNum = getRandomNum(9999)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patientEmail = requestPayloadNew.patients[0].patient.patient_email = props.usernameEmail+randomNum+props.domainEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parentEmail = requestPayloadNew.patients[0].emergencyContact.ecEmail = patientEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path props.leadsPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayloadNew</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = props.bearerName + &#39;eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmOGMzMmM4Mi05YTlmLTQxYzctYTMzOS0zNDg0ODE1MGRlNjMiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZjhjMzJjODItOWE5Zi00MWM3LWEzMzktMzQ4NDgxNTBkZTYzIiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiNWZlYmI5NTAtNjU1Mi00NDMyLWE2ZGMtZTQxYjdmZDFiZTVjIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiJlYjEwYTdhNi0wOTEwLTQ3OGEtOTMzZS0xYWUyMjM5YWQxYmQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MzMwNDM3NiwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5MzQ3MTMzMCwiaWF0IjoxNjkzNDY3NzMwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyZDU4NGVkNS1kNmFlLTRhNmMtOGQ4MS0zMjY2ZGY4ZTRhM2YiLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.fkyhHXH9zmZY6sK1iYozM9jeIBlhVxoi3GYBDQgRaEPUIp9vR_X4BawX1jsM-gkg8OmY3PMU4Z6vto7WCPW4VRgVJ_jW15EKpZWS0ywuQUlFEAUIwmcV7yF6Q1RntfdtihmuHLt0uyc-tLOHA9vt9acDYJxq_D6kdVE6v85cvptAFG_nIodCNEciqdcQ_e4o1i5uV5AJ1zxHwn0Gh_aZ3T48unMr5Ttk-sYujPC-dOdHFj_TgwwJCx3oHE8bgdvDvjr0sqNAg1RH6mGPfESxtKnfxxifB1T8m80gRWw8yyU2nrKgqhfxX_5fJyULGXLovNo61dKOyQxvfs4y22LP-Q&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7846</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">13:18:59.252 request:
+1 &gt; POST https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/leads
+1 &gt; Authorization: Bearer eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmOGMzMmM4Mi05YTlmLTQxYzctYTMzOS0zNDg0ODE1MGRlNjMiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZjhjMzJjODItOWE5Zi00MWM3LWEzMzktMzQ4NDgxNTBkZTYzIiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiNWZlYmI5NTAtNjU1Mi00NDMyLWE2ZGMtZTQxYjdmZDFiZTVjIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiJlYjEwYTdhNi0wOTEwLTQ3OGEtOTMzZS0xYWUyMjM5YWQxYmQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MzMwNDM3NiwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5MzQ3MTMzMCwiaWF0IjoxNjkzNDY3NzMwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyZDU4NGVkNS1kNmFlLTRhNmMtOGQ4MS0zMjY2ZGY4ZTRhM2YiLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.fkyhHXH9zmZY6sK1iYozM9jeIBlhVxoi3GYBDQgRaEPUIp9vR_X4BawX1jsM-gkg8OmY3PMU4Z6vto7WCPW4VRgVJ_jW15EKpZWS0ywuQUlFEAUIwmcV7yF6Q1RntfdtihmuHLt0uyc-tLOHA9vt9acDYJxq_D6kdVE6v85cvptAFG_nIodCNEciqdcQ_e4o1i5uV5AJ1zxHwn0Gh_aZ3T48unMr5Ttk-sYujPC-dOdHFj_TgwwJCx3oHE8bgdvDvjr0sqNAg1RH6mGPfESxtKnfxxifB1T8m80gRWw8yyU2nrKgqhfxX_5fJyULGXLovNo61dKOyQxvfs4y22LP-Q
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 634
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;provider_id&quot;:&quot;AutomationProvider&quot;,&quot;provider_org_id&quot;:&quot;90091&quot;,&quot;patients&quot;:[{&quot;patient&quot;:{&quot;firstname&quot;:&quot;AutomationPatient&quot;,&quot;lastname&quot;:&quot;Lastname&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;dob&quot;:&quot;asdf&quot;,&quot;patient_email&quot;:&quot;anusha.diwakar+ec8736@kiddo.health&quot;,&quot;homePhone&quot;:&quot;209-285-9852&quot;,&quot;mobile&quot;:&quot;505-518-3503&quot;,&quot;address&quot;:&quot;01Address&quot;,&quot;state&quot;:&quot;California&quot;,&quot;zipCode&quot;:&quot;95205&quot;,&quot;medicalCondition&quot;:[&quot;Asthma&quot;,&quot;Diabetes&quot;],&quot;payer_id&quot;:&quot;1234&quot;},&quot;emergencyContact&quot;:{&quot;ecFirstName&quot;:&quot;AutomationParent&quot;,&quot;ecLastName&quot;:&quot;Lastname&quot;,&quot;ecHomePhone&quot;:&quot;559-550-4091&quot;,&quot;ecMobile&quot;:&quot;916-988-2753&quot;,&quot;ecWorkNumber&quot;:&quot;256-622-1310&quot;,&quot;ecEmail&quot;:&quot;anusha.diwakar+ec8736@kiddo.health&quot;,&quot;ecRelationship&quot;:&quot;Guardian&quot;}}]}
+
+13:19:06.813 response time in milliseconds: 7555
+1 &lt; 200
+1 &lt; Date: Thu, 31 Aug 2023 07:49:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 797
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 52fdbb1a-2d82-4b01-a267-c1c69be76105
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: Kg_dqGp4IAMEdgw=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64f045f0-42757d03387a444350f787b0;Sampled=0;lineage=d8d2cf2e:0
+{&quot;status&quot;: true, &quot;code&quot;: 200, &quot;message&quot;: &quot;&quot;, &quot;data&quot;: [{&quot;patient&quot;: {&quot;id&quot;: &quot;64f045f5100d25e696a00038&quot;, &quot;firstname&quot;: &quot;AutomationPatient&quot;, &quot;lastname&quot;: &quot;Lastname&quot;, &quot;gender&quot;: &quot;Male&quot;, &quot;dob&quot;: &quot;asdf&quot;, &quot;patient_email&quot;: &quot;anusha.diwakar+ec8736@kiddo.health&quot;, &quot;homePhone&quot;: &quot;209-285-9852&quot;, &quot;mobile&quot;: &quot;505-518-3503&quot;, &quot;address&quot;: &quot;01Address&quot;, &quot;state&quot;: &quot;California&quot;, &quot;zipCode&quot;: &quot;95205&quot;, &quot;medicalCondition&quot;: [&quot;Asthma&quot;, &quot;Diabetes&quot;], &quot;payer_id&quot;: &quot;1234&quot;, &quot;parent_id&quot;: &quot;64f045f5100d25e696a00037&quot;}, &quot;emergencyContact&quot;: {&quot;ecFirstName&quot;: &quot;AutomationParent&quot;, &quot;ecLastName&quot;: &quot;Lastname&quot;, &quot;ecHomePhone&quot;: &quot;559-550-4091&quot;, &quot;ecMobile&quot;: &quot;916-988-2753&quot;, &quot;ecWorkNumber&quot;: &quot;256-622-1310&quot;, &quot;ecEmail&quot;: &quot;anusha.diwakar+ec8736@kiddo.health&quot;, &quot;ecRelationship&quot;: &quot;Guardian&quot;, &quot;id&quot;: &quot;64f045f5100d25e696a00037&quot;}}], &quot;errors&quot;: [], &quot;pagination&quot;: null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.code == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:40]</span>
+                <span class="scenario-name">Create record with existing parent and patient data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3717</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readProps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def props = readProps(&#39;file:src/test/resources/utils/karate.properties&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayloadNew = read(props.payloadNew)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def signIn = call read(props.bearerFeature)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def authToken = signIn.authToken</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref bg-step">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getRandomNum =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.19">function(max){ return Math.floor(Math.random() * max) }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path props.leadsPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayloadNew</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = props.bearerName + &#39;eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmOGMzMmM4Mi05YTlmLTQxYzctYTMzOS0zNDg0ODE1MGRlNjMiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZjhjMzJjODItOWE5Zi00MWM3LWEzMzktMzQ4NDgxNTBkZTYzIiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiNWZlYmI5NTAtNjU1Mi00NDMyLWE2ZGMtZTQxYjdmZDFiZTVjIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiJlYjEwYTdhNi0wOTEwLTQ3OGEtOTMzZS0xYWUyMjM5YWQxYmQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MzMwNDM3NiwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5MzQ3MTMzMCwiaWF0IjoxNjkzNDY3NzMwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyZDU4NGVkNS1kNmFlLTRhNmMtOGQ4MS0zMjY2ZGY4ZTRhM2YiLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.fkyhHXH9zmZY6sK1iYozM9jeIBlhVxoi3GYBDQgRaEPUIp9vR_X4BawX1jsM-gkg8OmY3PMU4Z6vto7WCPW4VRgVJ_jW15EKpZWS0ywuQUlFEAUIwmcV7yF6Q1RntfdtihmuHLt0uyc-tLOHA9vt9acDYJxq_D6kdVE6v85cvptAFG_nIodCNEciqdcQ_e4o1i5uV5AJ1zxHwn0Gh_aZ3T48unMr5Ttk-sYujPC-dOdHFj_TgwwJCx3oHE8bgdvDvjr0sqNAg1RH6mGPfESxtKnfxxifB1T8m80gRWw8yyU2nrKgqhfxX_5fJyULGXLovNo61dKOyQxvfs4y22LP-Q&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3701</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">13:19:06.897 request:
+1 &gt; POST https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/leads
+1 &gt; Authorization: Bearer eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmOGMzMmM4Mi05YTlmLTQxYzctYTMzOS0zNDg0ODE1MGRlNjMiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZjhjMzJjODItOWE5Zi00MWM3LWEzMzktMzQ4NDgxNTBkZTYzIiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiNWZlYmI5NTAtNjU1Mi00NDMyLWE2ZGMtZTQxYjdmZDFiZTVjIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiJlYjEwYTdhNi0wOTEwLTQ3OGEtOTMzZS0xYWUyMjM5YWQxYmQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MzMwNDM3NiwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5MzQ3MTMzMCwiaWF0IjoxNjkzNDY3NzMwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyZDU4NGVkNS1kNmFlLTRhNmMtOGQ4MS0zMjY2ZGY4ZTRhM2YiLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.fkyhHXH9zmZY6sK1iYozM9jeIBlhVxoi3GYBDQgRaEPUIp9vR_X4BawX1jsM-gkg8OmY3PMU4Z6vto7WCPW4VRgVJ_jW15EKpZWS0ywuQUlFEAUIwmcV7yF6Q1RntfdtihmuHLt0uyc-tLOHA9vt9acDYJxq_D6kdVE6v85cvptAFG_nIodCNEciqdcQ_e4o1i5uV5AJ1zxHwn0Gh_aZ3T48unMr5Ttk-sYujPC-dOdHFj_TgwwJCx3oHE8bgdvDvjr0sqNAg1RH6mGPfESxtKnfxxifB1T8m80gRWw8yyU2nrKgqhfxX_5fJyULGXLovNo61dKOyQxvfs4y22LP-Q
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 634
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;provider_id&quot;:&quot;AutomationProvider&quot;,&quot;provider_org_id&quot;:&quot;90091&quot;,&quot;patients&quot;:[{&quot;patient&quot;:{&quot;firstname&quot;:&quot;AutomationPatient&quot;,&quot;lastname&quot;:&quot;Lastname&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;dob&quot;:&quot;asdf&quot;,&quot;patient_email&quot;:&quot;anusha.diwakar+ec6666@kiddo.health&quot;,&quot;homePhone&quot;:&quot;209-285-9852&quot;,&quot;mobile&quot;:&quot;505-518-3503&quot;,&quot;address&quot;:&quot;01Address&quot;,&quot;state&quot;:&quot;California&quot;,&quot;zipCode&quot;:&quot;95205&quot;,&quot;medicalCondition&quot;:[&quot;Asthma&quot;,&quot;Diabetes&quot;],&quot;payer_id&quot;:&quot;1234&quot;},&quot;emergencyContact&quot;:{&quot;ecFirstName&quot;:&quot;AutomationParent&quot;,&quot;ecLastName&quot;:&quot;Lastname&quot;,&quot;ecHomePhone&quot;:&quot;559-550-4091&quot;,&quot;ecMobile&quot;:&quot;916-988-2753&quot;,&quot;ecWorkNumber&quot;:&quot;256-622-1310&quot;,&quot;ecEmail&quot;:&quot;anusha.diwakar+ec6666@kiddo.health&quot;,&quot;ecRelationship&quot;:&quot;Guardian&quot;}}]}
+
+13:19:10.588 response time in milliseconds: 3689
+1 &lt; 400
+1 &lt; Date: Thu, 31 Aug 2023 07:49:14 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 884
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: ba120751-12b2-4312-9ff6-4a010d47e7fc
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: Kg_exGlUoAMEqpg=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64f045f7-4b07e55b098b2a7564d4cfc9;Sampled=0;lineage=d8d2cf2e:0
+{&quot;status&quot;: false, &quot;code&quot;: 400, &quot;message&quot;: &quot;&quot;, &quot;data&quot;: [], &quot;errors&quot;: [{&quot;error_message&quot;: &quot;Patient and lead already exist&quot;, &quot;patient&quot;: {&quot;_id&quot;: &quot;64f04507100d25e696a00028&quot;, &quot;id&quot;: &quot;64f04507100d25e696a00028&quot;, &quot;firstname&quot;: &quot;AutomationPatient&quot;, &quot;lastname&quot;: &quot;Lastname&quot;, &quot;gender&quot;: &quot;Male&quot;, &quot;dob&quot;: &quot;asdf&quot;, &quot;patient_email&quot;: &quot;anusha.diwakar+ec6666@kiddo.health&quot;, &quot;homePhone&quot;: &quot;209-285-9852&quot;, &quot;mobile&quot;: &quot;505-518-3503&quot;, &quot;address&quot;: &quot;01Address&quot;, &quot;state&quot;: &quot;California&quot;, &quot;zipCode&quot;: &quot;95205&quot;, &quot;medicalCondition&quot;: [&quot;Asthma&quot;, &quot;Diabetes&quot;], &quot;payer_id&quot;: &quot;1234&quot;, &quot;parent_id&quot;: &quot;64d602846247cc7d50f88975&quot;}, &quot;lead&quot;: {&quot;_id&quot;: &quot;64d602846247cc7d50f88975&quot;, &quot;ecFirstName&quot;: &quot;ParFname&quot;, &quot;ecLastName&quot;: &quot;Parlname&quot;, &quot;ecHomePhone&quot;: &quot;asdfasd&quot;, &quot;ecMobile&quot;: &quot;asdfasdf&quot;, &quot;ecWorkNumber&quot;: &quot;asdfasdf&quot;, &quot;ecEmail&quot;: &quot;anusha.diwakar+ec6666@kiddo.health&quot;, &quot;ecRelationship&quot;: &quot;Father&quot;, &quot;id&quot;: &quot;64d602846247cc7d50f88975&quot;}}], &quot;pagination&quot;: null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.code == 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:50]</span>
+                <span class="scenario-name">Create record with incorrect parent and patient data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2943</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:50]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readProps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def props = readProps(&#39;file:src/test/resources/utils/karate.properties&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayloadNew = read(props.payloadNew)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def signIn = call read(props.bearerFeature)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def authToken = signIn.authToken</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref bg-step">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getRandomNum =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.19">function(max){ return Math.floor(Math.random() * max) }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomNum = getRandomNum(9999)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patientEmail = requestPayloadNew.patients[0].patient.patient_email = props.domainEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parentEmail = requestPayloadNew.patients[0].emergencyContact.ecEmail = patientEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path props.leadsPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayloadNew</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = props.bearerName + &#39;eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmOGMzMmM4Mi05YTlmLTQxYzctYTMzOS0zNDg0ODE1MGRlNjMiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZjhjMzJjODItOWE5Zi00MWM3LWEzMzktMzQ4NDgxNTBkZTYzIiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiNWZlYmI5NTAtNjU1Mi00NDMyLWE2ZGMtZTQxYjdmZDFiZTVjIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiJlYjEwYTdhNi0wOTEwLTQ3OGEtOTMzZS0xYWUyMjM5YWQxYmQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MzMwNDM3NiwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5MzQ3MTMzMCwiaWF0IjoxNjkzNDY3NzMwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyZDU4NGVkNS1kNmFlLTRhNmMtOGQ4MS0zMjY2ZGY4ZTRhM2YiLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.fkyhHXH9zmZY6sK1iYozM9jeIBlhVxoi3GYBDQgRaEPUIp9vR_X4BawX1jsM-gkg8OmY3PMU4Z6vto7WCPW4VRgVJ_jW15EKpZWS0ywuQUlFEAUIwmcV7yF6Q1RntfdtihmuHLt0uyc-tLOHA9vt9acDYJxq_D6kdVE6v85cvptAFG_nIodCNEciqdcQ_e4o1i5uV5AJ1zxHwn0Gh_aZ3T48unMr5Ttk-sYujPC-dOdHFj_TgwwJCx3oHE8bgdvDvjr0sqNAg1RH6mGPfESxtKnfxxifB1T8m80gRWw8yyU2nrKgqhfxX_5fJyULGXLovNo61dKOyQxvfs4y22LP-Q&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2923</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">13:19:10.635 request:
+1 &gt; POST https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/leads
+1 &gt; Authorization: Bearer eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmOGMzMmM4Mi05YTlmLTQxYzctYTMzOS0zNDg0ODE1MGRlNjMiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZjhjMzJjODItOWE5Zi00MWM3LWEzMzktMzQ4NDgxNTBkZTYzIiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiNWZlYmI5NTAtNjU1Mi00NDMyLWE2ZGMtZTQxYjdmZDFiZTVjIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiJlYjEwYTdhNi0wOTEwLTQ3OGEtOTMzZS0xYWUyMjM5YWQxYmQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MzMwNDM3NiwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5MzQ3MTMzMCwiaWF0IjoxNjkzNDY3NzMwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyZDU4NGVkNS1kNmFlLTRhNmMtOGQ4MS0zMjY2ZGY4ZTRhM2YiLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.fkyhHXH9zmZY6sK1iYozM9jeIBlhVxoi3GYBDQgRaEPUIp9vR_X4BawX1jsM-gkg8OmY3PMU4Z6vto7WCPW4VRgVJ_jW15EKpZWS0ywuQUlFEAUIwmcV7yF6Q1RntfdtihmuHLt0uyc-tLOHA9vt9acDYJxq_D6kdVE6v85cvptAFG_nIodCNEciqdcQ_e4o1i5uV5AJ1zxHwn0Gh_aZ3T48unMr5Ttk-sYujPC-dOdHFj_TgwwJCx3oHE8bgdvDvjr0sqNAg1RH6mGPfESxtKnfxxifB1T8m80gRWw8yyU2nrKgqhfxX_5fJyULGXLovNo61dKOyQxvfs4y22LP-Q
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 592
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;provider_id&quot;:&quot;AutomationProvider&quot;,&quot;provider_org_id&quot;:&quot;90091&quot;,&quot;patients&quot;:[{&quot;patient&quot;:{&quot;firstname&quot;:&quot;AutomationPatient&quot;,&quot;lastname&quot;:&quot;Lastname&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;dob&quot;:&quot;asdf&quot;,&quot;patient_email&quot;:&quot;@kiddo.health&quot;,&quot;homePhone&quot;:&quot;209-285-9852&quot;,&quot;mobile&quot;:&quot;505-518-3503&quot;,&quot;address&quot;:&quot;01Address&quot;,&quot;state&quot;:&quot;California&quot;,&quot;zipCode&quot;:&quot;95205&quot;,&quot;medicalCondition&quot;:[&quot;Asthma&quot;,&quot;Diabetes&quot;],&quot;payer_id&quot;:&quot;1234&quot;},&quot;emergencyContact&quot;:{&quot;ecFirstName&quot;:&quot;AutomationParent&quot;,&quot;ecLastName&quot;:&quot;Lastname&quot;,&quot;ecHomePhone&quot;:&quot;559-550-4091&quot;,&quot;ecMobile&quot;:&quot;916-988-2753&quot;,&quot;ecWorkNumber&quot;:&quot;256-622-1310&quot;,&quot;ecEmail&quot;:&quot;@kiddo.health&quot;,&quot;ecRelationship&quot;:&quot;Guardian&quot;}}]}
+
+13:19:13.553 response time in milliseconds: 2917
+1 &lt; 400
+1 &lt; Date: Thu, 31 Aug 2023 07:49:17 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 561
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 50e63cc9-f337-45a0-b4c2-191c5e85a757
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: Kg_fXGOyIAMEQpg=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64f045fb-786c44a773d364127ef3ecea;Sampled=0;lineage=d8d2cf2e:0
+{&quot;status&quot;: false, &quot;code&quot;: 400, &quot;message&quot;: &quot;&quot;, &quot;data&quot;: [], &quot;errors&quot;: [&quot;2 validation errors for ItemAdaptedRequest&quot;, &quot;patient -&gt; patient_email&quot;, &quot;  There must be something before the @-sign. (type=value_error.emailsyntax)&quot;, &quot;emergencyContact -&gt; ecEmail&quot;, &quot;  There must be something before the @-sign. (type=value_error.emailsyntax)&quot;, [{&quot;field&quot;: &quot;patient -&gt; patient_email&quot;, &quot;error_message&quot;: &quot;There must be something before the @-sign.&quot;}, {&quot;field&quot;: &quot;emergencyContact -&gt; ecEmail&quot;, &quot;error_message&quot;: &quot;There must be something before the @-sign.&quot;}]], &quot;pagination&quot;: null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.code == 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

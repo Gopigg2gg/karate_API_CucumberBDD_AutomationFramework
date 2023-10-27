@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: features/postLeads.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>features</td>
+      <td>24 Aug 2023, 20:22</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/postLeads.feature</td>
+          <td      class="passed"    >15</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">15</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="10744456875">10.744</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/postLeads.feature</span>
+
+
+</div>
+
+        <div class="description indention">Post Leads API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.111</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def readProps =</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def props = readProps('file:src/test/resources/utils/karate.properties')</span>
+
+  <span class="lead-duration duration">0.046</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestPayloadNew = read(props.payloadNew)</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getRandomNum =</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>function(max){ return Math.floor(Math.random() * max) }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNum = getRandomNum(9999)</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def patientEmail = requestPayloadNew.patients[0].patient.patient_email = props.usernameEmail+randomNum+props.domainEmail</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def parentEmail = requestPayloadNew.patients[0].emergencyContact.ecEmail = patientEmail</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def passedStatus = props.OK</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">10.632</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create Leads with new parent and patient data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path props.leadsPath</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestPayloadNew</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = props.bearerName + 'eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJhOGVkZWE4OC0wODc0LTRiZDMtYjM4Yi0yNWIyZWUxMmQyYTYiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiYThlZGVhODgtMDg3NC00YmQzLWIzOGItMjViMmVlMTJkMmE2IiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiY2Y3ZjgyNTMtY2YwMi00YmEyLWFkZjEtMGMyNjdjNGQyZmFmIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiI5MTZmYWFhOC0yZmU2LTQ4OTEtOTA2Yi1jM2VjNWZlY2M3NjMiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5Mjg4MDE4NCwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5Mjg5MDYyMCwiaWF0IjoxNjkyODg3MDIwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyNWIwMDQyZi03M2VkLTQwNDQtYTEzOS0xOTVmMjllY2VlOTciLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.CTyCy-YwQyR1KnbvHi1g_FO7xwqnINETR6n5d5Luox371PQq5xZ7CYfutLPuT_NqQfFDg26ZlILGpek9Rmdzq7Hs8s9lCjR2_lwIMN4o8iOwEgtun00CIPUlt0xgK1MP7wKBlWP3eMyb_JN0FVK-whSrrnp5gHnYHyvZ5n26P-78tnOyLQ8H4JC2pnFC4zU2-HIDu26pSJpad7f9GMh8EldEvHRaLQkSRsL2N9rU7OUIKzhns8mxCTHTEIOok4Th800hbO1XQeiGQIGckWudetDPHqRkmy-6ZMmmI607ZAZDozdnlIXzv2lEqgPQp3StALCVGbvQeo4wm3ElbfuxvQ'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">10.588</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>20:22:09.715 request:
+1 &gt; POST https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/leads
+1 &gt; Authorization: Bearer eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJhOGVkZWE4OC0wODc0LTRiZDMtYjM4Yi0yNWIyZWUxMmQyYTYiLCJjdXN0b206b2NjdXBhdGlvbiI6IlRlc3QiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZ2VuZGVyIjoiRiIsImN1c3RvbTpvcmdOYW1lIjoiTkEiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiYThlZGVhODgtMDg3NC00YmQzLWIzOGItMjViMmVlMTJkMmE2IiwiY3VzdG9tOmxvY2F0aW9uIjoiTkEiLCJvcmlnaW5fanRpIjoiY2Y3ZjgyNTMtY2YwMi00YmEyLWFkZjEtMGMyNjdjNGQyZmFmIiwiYXVkIjoiN3J2OTltNzhvMm02aDBua2RnNjZuNWJnYmEiLCJjdXN0b206dGVtcFVuaXQiOiJGIiwiZXZlbnRfaWQiOiI5MTZmYWFhOC0yZmU2LTQ4OTEtOTA2Yi1jM2VjNWZlY2M3NjMiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5Mjg4MDE4NCwibmFtZSI6IkFudXNoYSIsInBob25lX251bWJlciI6Ijc5NzQ3MTE2MzgiLCJjdXN0b206b3JnSUQiOiJOQSIsImV4cCI6MTY5Mjg5MDYyMCwiaWF0IjoxNjkyODg3MDIwLCJmYW1pbHlfbmFtZSI6IkQiLCJqdGkiOiIyNWIwMDQyZi03M2VkLTQwNDQtYTEzOS0xOTVmMjllY2VlOTciLCJlbWFpbCI6ImFudXNoYS5kaXdha2FyQGtpZGRvLmhlYWx0aCJ9.CTyCy-YwQyR1KnbvHi1g_FO7xwqnINETR6n5d5Luox371PQq5xZ7CYfutLPuT_NqQfFDg26ZlILGpek9Rmdzq7Hs8s9lCjR2_lwIMN4o8iOwEgtun00CIPUlt0xgK1MP7wKBlWP3eMyb_JN0FVK-whSrrnp5gHnYHyvZ5n26P-78tnOyLQ8H4JC2pnFC4zU2-HIDu26pSJpad7f9GMh8EldEvHRaLQkSRsL2N9rU7OUIKzhns8mxCTHTEIOok4Th800hbO1XQeiGQIGckWudetDPHqRkmy-6ZMmmI607ZAZDozdnlIXzv2lEqgPQp3StALCVGbvQeo4wm3ElbfuxvQ
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 634
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;provider_id&quot;:&quot;AutomationProvider&quot;,&quot;provider_org_id&quot;:&quot;90091&quot;,&quot;patients&quot;:[{&quot;patient&quot;:{&quot;firstname&quot;:&quot;AutomationPatient&quot;,&quot;lastname&quot;:&quot;Lastname&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;dob&quot;:&quot;asdf&quot;,&quot;patient_email&quot;:&quot;anusha.diwakar+ec9059@kiddo.health&quot;,&quot;homePhone&quot;:&quot;209-285-9852&quot;,&quot;mobile&quot;:&quot;505-518-3503&quot;,&quot;address&quot;:&quot;01Address&quot;,&quot;state&quot;:&quot;California&quot;,&quot;zipCode&quot;:&quot;95205&quot;,&quot;medicalCondition&quot;:[&quot;Asthma&quot;,&quot;Diabetes&quot;],&quot;payer_id&quot;:&quot;1234&quot;},&quot;emergencyContact&quot;:{&quot;ecFirstName&quot;:&quot;AutomationParent&quot;,&quot;ecLastName&quot;:&quot;Lastname&quot;,&quot;ecHomePhone&quot;:&quot;559-550-4091&quot;,&quot;ecMobile&quot;:&quot;916-988-2753&quot;,&quot;ecWorkNumber&quot;:&quot;256-622-1310&quot;,&quot;ecEmail&quot;:&quot;anusha.diwakar+ec9059@kiddo.health&quot;,&quot;ecRelationship&quot;:&quot;Guardian&quot;}}]}
+
+20:22:20.038 response time in milliseconds: 10322
+1 &lt; 200
+1 &lt; Date: Thu, 24 Aug 2023 14:52:19 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 797
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 4146fc77-3ae0-4cec-9655-a6d5822712d9
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: KK44WGVCIAMEReg=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64e76e9b-32f3959104d2a90f544757a8;Sampled=0;lineage=d8d2cf2e:0
+{&quot;status&quot;: true, &quot;code&quot;: 200, &quot;message&quot;: &quot;&quot;, &quot;data&quot;: [{&quot;patient&quot;: {&quot;id&quot;: &quot;64e76ea27553737772a5f7b1&quot;, &quot;firstname&quot;: &quot;AutomationPatient&quot;, &quot;lastname&quot;: &quot;Lastname&quot;, &quot;gender&quot;: &quot;Male&quot;, &quot;dob&quot;: &quot;asdf&quot;, &quot;patient_email&quot;: &quot;anusha.diwakar+ec9059@kiddo.health&quot;, &quot;homePhone&quot;: &quot;209-285-9852&quot;, &quot;mobile&quot;: &quot;505-518-3503&quot;, &quot;address&quot;: &quot;01Address&quot;, &quot;state&quot;: &quot;California&quot;, &quot;zipCode&quot;: &quot;95205&quot;, &quot;medicalCondition&quot;: [&quot;Asthma&quot;, &quot;Diabetes&quot;], &quot;payer_id&quot;: &quot;1234&quot;, &quot;parent_id&quot;: &quot;64e76ea27553737772a5f7b0&quot;}, &quot;emergencyContact&quot;: {&quot;ecFirstName&quot;: &quot;AutomationParent&quot;, &quot;ecLastName&quot;: &quot;Lastname&quot;, &quot;ecHomePhone&quot;: &quot;559-550-4091&quot;, &quot;ecMobile&quot;: &quot;916-988-2753&quot;, &quot;ecWorkNumber&quot;: &quot;256-622-1310&quot;, &quot;ecEmail&quot;: &quot;anusha.diwakar+ec9059@kiddo.health&quot;, &quot;ecRelationship&quot;: &quot;Guardian&quot;, &quot;id&quot;: &quot;64e76ea27553737772a5f7b0&quot;}}], &quot;errors&quot;: [], &quot;pagination&quot;: null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.code == 200</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

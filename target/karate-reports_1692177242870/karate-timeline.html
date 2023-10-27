@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/Test[1:7]","start":1692176910033,"end":1692176910304,"title":"features\/Test[1:7] 14:38:30.033-14:38:30.304 Test Post API","className":"failed"},{"id":2,"group":2,"content":"features\/callOnceBearerToken[1:3]","start":1692176910034,"end":1692176919339,"title":"features\/callOnceBearerToken[1:3] 14:38:30.034-14:38:39.339 Oauth2 Token API"},{"id":3,"group":3,"content":"features\/getOrder[1:24]","start":1692176910033,"end":1692176910304,"title":"features\/getOrder[1:24] 14:38:30.033-14:38:30.304 get order details","className":"failed"},{"id":4,"group":4,"content":"features\/getOrderStatus[1:10]","start":1692176910034,"end":1692176924315,"title":"features\/getOrderStatus[1:10] 14:38:30.034-14:38:44.315 get order details"},{"id":5,"group":5,"content":"features\/postLeads[1:6]","start":1692176910034,"end":1692176910427,"title":"features\/postLeads[1:6] 14:38:30.034-14:38:30.427 Test Post API","className":"failed"},{"id":6,"group":3,"content":"features\/postValidationCode[1:7]","start":1692176910416,"end":1692176920717,"title":"features\/postValidationCode[1:7] 14:38:30.416-14:38:40.717 Post Validation code API","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

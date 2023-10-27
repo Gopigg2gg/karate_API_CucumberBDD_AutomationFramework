@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("2c83bf2f-33be-48ce-891b-a91f22221982",{name:"anusha"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.getOrder</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>staging</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-08-24 06:06:27 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:19]"><span>[1:19]</span> <span>get order details</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/getOrder.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Orders</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:19]</span>
+                <span class="scenario-name">get order details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4356</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readProps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4">function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def props = readProps(&#39;file:src/test/resources/utils/karate.properties&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = xAPIKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def orderId = props.orders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {order_id: &#39;#(orderId)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/stage/order&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4255</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">18:06:23.269 request:
+1 &gt; GET https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/order?order_id=64e74cff35a8404824048b23
+1 &gt; x-api-key: 4u62oUJEiREEYI8uV42v2mNPMcXeyYW6b0DydgJi
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:06:27.189 response time in milliseconds: 3907
+1 &lt; 200
+1 &lt; Date: Thu, 24 Aug 2023 12:36:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 1826
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 71b81717-8ade-4110-a642-9ff86236ceeb
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: KKk_bF67IAMEPPw=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64e74ec8-1f0ed1a17f28a88c6fc73f96;Sampled=0;lineage=dd76b2cd:0
+{&quot;status&quot;: true, &quot;code&quot;: 200, &quot;message&quot;: &quot;The order exists but hasn&#39;t been confirmed&quot;, &quot;data&quot;: {&quot;lead&quot;: {&quot;lead_id&quot;: &quot;64e74cff35a8404824048b21&quot;, &quot;request_id&quot;: &quot;64e74cfc35a8404824048b1f&quot;, &quot;provider_id&quot;: &quot;AutomationProvider&quot;, &quot;lead_gen_time&quot;: &quot;20230824122847&quot;, &quot;lead_email&quot;: &quot;anusha.diwakar+ec7424@kiddo.health&quot;, &quot;lead_mobile&quot;: &quot;916-988-2753&quot;, &quot;num_patients&quot;: 0, &quot;lead_full_name&quot;: &quot;AutomationParent Lastname&quot;, &quot;lead_type&quot;: &quot;new&quot;, &quot;lead_patient_ids&quot;: &quot;&quot;, &quot;lead_status&quot;: &quot;consideration&quot;, &quot;order_id&quot;: &quot;64e74cff35a8404824048b23&quot;, &quot;payor&quot;: &quot;1234&quot;}, &quot;lead_mongo_data&quot;: {&quot;_id&quot;: &quot;64e74cff35a8404824048b21&quot;, &quot;ecFirstName&quot;: &quot;AutomationParent&quot;, &quot;ecLastName&quot;: &quot;Lastname&quot;, &quot;ecHomePhone&quot;: &quot;559-550-4091&quot;, &quot;ecMobile&quot;: &quot;916-988-2753&quot;, &quot;ecWorkNumber&quot;: &quot;256-622-1310&quot;, &quot;ecEmail&quot;: &quot;anusha.diwakar+ec7424@kiddo.health&quot;, &quot;ecRelationship&quot;: &quot;Guardian&quot;, &quot;id&quot;: &quot;64e74cff35a8404824048b21&quot;}, &quot;order_info&quot;: {&quot;order_id&quot;: &quot;64e74cff35a8404824048b23&quot;, &quot;lead_id&quot;: &quot;64e74cff35a8404824048b21&quot;, &quot;lead_email&quot;: &quot;anusha.diwakar+ec7424@kiddo.health&quot;, &quot;lead_patient_id&quot;: &quot;64e74cff35a8404824048b22&quot;, &quot;request_id&quot;: &quot;64e74cfc35a8404824048b1f&quot;, &quot;order_confirmed_dt&quot;: null, &quot;provider_id&quot;: &quot;AutomationProvider&quot;, &quot;order_status&quot;: &quot;Active&quot;, &quot;order_closed_dt&quot;: null}, &quot;order_status&quot;: {&quot;order_id&quot;: &quot;64e74cff35a8404824048b23&quot;, &quot;dt_time&quot;: &quot;20230824122847&quot;, &quot;current_status&quot;: &quot;Not owned&quot;}, &quot;patient_data&quot;: {&quot;_id&quot;: &quot;64e74cff35a8404824048b22&quot;, &quot;id&quot;: &quot;64e74cff35a8404824048b22&quot;, &quot;firstname&quot;: &quot;AutomationPatient&quot;, &quot;lastname&quot;: &quot;Lastname&quot;, &quot;gender&quot;: &quot;Male&quot;, &quot;dob&quot;: &quot;asdf&quot;, &quot;patient_email&quot;: &quot;anusha.diwakar+ec7424@kiddo.health&quot;, &quot;homePhone&quot;: &quot;209-285-9852&quot;, &quot;mobile&quot;: &quot;505-518-3503&quot;, &quot;address&quot;: &quot;01Address&quot;, &quot;state&quot;: &quot;California&quot;, &quot;zipCode&quot;: &quot;95205&quot;, &quot;medicalCondition&quot;: [&quot;Asthma&quot;, &quot;Diabetes&quot;], &quot;payer_id&quot;: &quot;1234&quot;, &quot;parent_id&quot;: &quot;64e74cff35a8404824048b21&quot;}}, &quot;errors&quot;: [], &quot;pagination&quot;: null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

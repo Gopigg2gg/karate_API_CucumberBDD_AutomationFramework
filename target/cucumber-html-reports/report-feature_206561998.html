@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: features/callOnceBearerToken.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>features</td>
+      <td>16 Aug 2023, 14:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/callOnceBearerToken.feature</td>
+          <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="2570595458">2.570</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/callOnceBearerToken.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get bearer Token for Provider Portal</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.570</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Oauth2 Token API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def readProps =</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def props = readProps('file:src/test/resources/utils/karate.properties')</span>
+
+  <span class="lead-duration duration">0.067</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://provider-portal-dev.auth.us-east-1.amazoncognito.com'</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/oauth2/token'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field grant_type = props.grantType</span>
+
+  <span class="lead-duration duration">0.380</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field client_secret = props.clientSecret</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field client_id = props.clientId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field redirect_uri = props.redirectUri</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field refresh_token = props.refreshToken</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">2.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>14:44:05.615 request:
+1 &gt; POST https://provider-portal-dev.auth.us-east-1.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 1973
+1 &gt; Host: provider-portal-dev.auth.us-east-1.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_371)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=refresh_token&amp;client_secret=s5cli5fi2p4us02j3tvv1f998j076r7k0m71ebl7fj66qolqtgh&amp;client_id=6ji8vbofef21ga6e1oep9ifedm&amp;redirect_uri=https%3A%2F%2Fgoodparents.co%2F&amp;refresh_token=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.t4J5wY4aIWBUTTxWp9tjvgd4D_k7i_5pZ5T6jU2jHZ2nq-n53L5zzZeN7HaN5xw2FPigy_5eHxmnPQ9WJupNDkFEDN6WSz4JaBLxPKsDRMbyc_6cg0itqmTZmlLY_I3kzcpUlPTtudm9PoAT0zE2NvSqLA_vFiFA-r9L678oi2CnIwnbYVmKceYMhtH6LmZgdkDLoN7xPI-h9lYW0iEmnY2dW-ZA6mubcNX5Q6WiF5wmO--LzcG1IS0C11ISS8TYX1wEhva86UyfrBRgtRc-AIPHdj-RGlHEU_6adgQkXwNud37BRxFjFdSoHn3RRLMfl84zDeAYYPO79CEpSnZJXw.kahcr4UUsOpMhp8y.nv6cmXtWpLsORgpRwzVks3mDZiyCKWjX_Ml4O5X1o3elzzLGc5N5yXEje5Xgm-KVcB9ULbcekb3iP_1dUPqjLSzJ9FlcLnMsYWq5qfEwLzdObByItg4Kt8qDkMBXn9nc-SF4CTzx9oKqxFmcylJS8b96eyrTuYf0DuiDT5DymxDCA1u0UH2wj3jBwugGAgb0iZab-WrVwSH7nVaWqxCQ3pC6RZXk_IXVj7QYUX1lWTBvSVPiicE_UCG4SLw8tR9svvMYD35u816qZg9a7uyh80hsXSi_vWwDbvXPlXUiDqu9_Cv3TeWh03pZjMPIUnF01BjU7mWxsJLUgE6T8V_fNNP9qY55DObcXm2GyMDZ7i5bppFXqmxG0wwCdQq_mU1KszA6RH_Dpe3arR_OWRxt2Fy36kEsKG_g3ldg0RqpsWahTCExzm4vOQc2sFpMj7lg6miqhyuwR6Xpe8wyfKJ73C2ri1LLRXIfGBpdiuYpxqHZ0ohgjmqd3f8H9G0BmgkHWIYm4Q0_SYXxI4AhwToyIPzbSJJrkSgOX5-btsMtLqhEa4y-2NHhqivX5HnFHfmOwS1_sX-52ib9AMgyhtXw9RrbQ-og0ZUiB5FljRTfUbMphlDxhSAoNnD8nWkbJ92UABPgjx-J0p54-GyYuzUbvVzWbaVQf2-DvB87sCNGAo_-kagws4ySgZ8EOcuGmN_LMkt8g-wa6RZQJ8We6lQeFGwX2z0YlbN4iCvosRI6ppMzXMZesTZGC4JV3-KIvUH0-t_0EMCkM86cBt0X3CLVKJk6Xwa0U0E8OgynlctHeXO2sGMMPga9nQr2oeh91ooFp-JSMRLfyqbxcnOWpx0t6AX8LL_mM0puXH495myMKmUqmBlFoEqqciicSlrInCp-f5lL1C9IoBCmJioh0YkbwTFTUwkvU83wl4quGLFCMUVz5TF0eGcM_prO6KnDZ4jjECsdXqcNRKa9glIQKskyb3JLqsLiNBijG61ApTqmA5vHKBAEFfM-6RxiSj0ZNkeb6WjPF6XqKl82q9uFIWyLHUO42pQOtWdw_MwBi6ZeebOPe2er8FA5wbm3MJP1UevyoiyaIl60CasU6l6rYLRskhGyHhKzQTo34RILfZHzsYQX8gVoZYRBtWSMANa5lOYgIw5gAqpT1ik_MU5zG35GPEioAARvTSRs25MNj5uiGDo2QaFsv3OaSGn1l2sU1XN16s99_nU3Rp0u-lSurJnKge2bsmR5sqLAADsMnX69FMrgggkWf80mrkEAdNYaMaDrv0xaWsQUmlnxIU64zWSfnurILHtFM0T5BcZiE0kE5svbWe3Ez7CawZj3kgjm.dGNEt-cU99F62xgukgWbEA
+
+14:44:07.118 response time in milliseconds: 1498
+1 &lt; 200
+1 &lt; Date: Wed, 16 Aug 2023 09:14:07 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: XSRF-TOKEN=7ba13123-32bc-4c4a-8e65-aa5ea90fb193; Path=/; Secure; HttpOnly; SameSite=Lax
+1 &lt; x-amz-cognito-request-id: 8a821a1f-0357-43c2-b1b6-584d48e8d9b3
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: Server
+{&quot;id_token&quot;:&quot;eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiTmNRTDA5R2RIbnJRY1NrSHVlbzNmUSIsInN1YiI6Ijk4Y2E1NmY4LWZkNDAtNDk5Ny1hOGE4LWRkMjcwMDRhOTU4NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJjb2duaXRvOnVzZXJuYW1lIjoiOThjYTU2ZjgtZmQ0MC00OTk3LWE4YTgtZGQyNzAwNGE5NTg3Iiwib3JpZ2luX2p0aSI6IjU1ZDNlNTM4LWM2M2QtNDhlMS04ZDE5LWUyZjU1MjU5MWNkZCIsImF1ZCI6IjZqaTh2Ym9mZWYyMWdhNmUxb2VwOWlmZWRtIiwiZXZlbnRfaWQiOiI3ZGVhODg4MS0yMWIwLTRkOTYtYjIyMS0zNmUyMTI5MWQ5YmUiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY4ODcyNDE1MSwiZXhwIjoxNjkyMTgwODQ2LCJpYXQiOjE2OTIxNzcyNDcsImp0aSI6ImQyM2Y2M2RiLWQyM2EtNDk0Ny05OGNhLWQ2NzBlMzE2MjQyYiIsImVtYWlsIjoibWloaXIuYmhhdHRAa2lkZG8uaGVhbHRoIn0.GiXwlz_DF1emxZbHDHmK0Ra4kXAVikrvEL8K0u-ZwIER0mGDGi7acPyl3VybviARYkYZky7LARDU-5CMPLohZriDhUOwTsN5xRbnQSveYUXqp4Nxn7faf264wgWbdAOLbhZPsmp9CfCF6fXbhs7LWTouPLmqSApqck_3Y3aomTFJJdsxDPbOpewdz3_yvKjtGZCb1RmibZF0bco_87b_K_GP6qCyVZl4CtvknGRrOypU7NY2xEQ0Ebmfnncni8q-IhwlZsA0y2N_bPgpoFAwha9RzexHssUgOYZ7sZrFuJx404vc3pWesVZkzjKt6Dj0B2AdZq0Z9VOt84RuHg0nug&quot;,&quot;access_token&quot;:&quot;eyJraWQiOiJXS1pzQTNvbnFKcjRCMkpCeHh5dVBLNVlzZ0N0Z1dTZm5JQXh2YnpGTElFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5OGNhNTZmOC1mZDQwLTQ5OTctYThhOC1kZDI3MDA0YTk1ODciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2amk4dmJvZmVmMjFnYTZlMW9lcDlpZmVkbSIsIm9yaWdpbl9qdGkiOiI1NWQzZTUzOC1jNjNkLTQ4ZTEtOGQxOS1lMmY1NTI1OTFjZGQiLCJldmVudF9pZCI6IjdkZWE4ODgxLTIxYjAtNGQ5Ni1iMjIxLTM2ZTIxMjkxZDliZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicGhvbmUgb3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNjg4NzI0MTUxLCJleHAiOjE2OTIxODA4NDYsImlhdCI6MTY5MjE3NzI0NywianRpIjoiYWI1ZDZkYjItODdhNC00NDI4LWFmZDctNjQ1NmZhNTU1NTNmIiwidXNlcm5hbWUiOiI5OGNhNTZmOC1mZDQwLTQ5OTctYThhOC1kZDI3MDA0YTk1ODcifQ.bD-iWnBDpuIsQrWKtw9XPDgFiBv_zt0VQlO47xF5IXkGnWdCy9AzBDWBxR2vhwlGGoDnthxDPYsAGSzsti4RH8YEcheGyubGfZ_PdXw77zaeTB3YGQ1LMFooYDNMldSq5gvacTV4quB8ZQkOlN5TphH6u5jALaEiybYXVmYxRnXA_josnuKkcc-jqX4ybZEEGSETkBp8ZO0mfsyl9YMScFf-cPt24UD6kfPXlxzAlLwESGemoqUJn6ur8TEHgxSQYLzMhE83XTDF9xVd29Mk0faehdvJ_2w8-5CitCsbuec3XWvbxpuKnGQR8OI5kvw9alva-FXDVpFZrHbvCAKcJw&quot;,&quot;expires_in&quot;:3600,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status  200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def authToken = response.id_token</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

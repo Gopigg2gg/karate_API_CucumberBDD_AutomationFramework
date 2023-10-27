@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("2c83bf2f-33be-48ce-891b-a91f22221982",{name:"anusha"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.features.postLeads</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-08-16 11:46:01 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:33]"><span>[1:33]</span> <span>Create Leads with new parent and patient data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/postLeads.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Post Leads API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:33]</span>
+                <span class="scenario-name">Create Leads with new parent and patient data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5267</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayload1 = read(&#39;file:src/test/resources/data/json/postLeads1.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readProps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def props = readProps(&#39;file:src/test/resources/utils/karate.properties&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIn = call read(&#39;file:src/test/java/authFeatures/bearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2386</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.17.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.authFeatures.bearerToken</div>
+      </div>
+      <div class="time-cell passed">2356</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readProps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.17.0.call.0.5">function(path) {
+  var stream = karate.readAsStream(path);
+  var props = new java.util.Properties();
+  props.load(stream);
+  return props;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def props = readProps(&#39;file:src/test/resources/utils/karate.properties&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://provider-portal-dev.auth.us-east-1.amazoncognito.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/oauth2/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = props.grantType</span>
+      </div>
+    </div>
+    <div class="time-cell passed">96</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_secret = props.clientSecret</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = props.clientId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field redirect_uri = props.redirectUri</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field refresh_token = props.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.24">
+      <div class="step-ref bg-step">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2243</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17.0.call.0.24">23:45:56.662 request:
+1 &gt; POST https://provider-portal-dev.auth.us-east-1.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 1973
+1 &gt; Host: provider-portal-dev.auth.us-east-1.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_371)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=refresh_token&amp;client_secret=s5cli5fi2p4us02j3tvv1f998j076r7k0m71ebl7fj66qolqtgh&amp;client_id=6ji8vbofef21ga6e1oep9ifedm&amp;redirect_uri=https%3A%2F%2Fgoodparents.co%2F&amp;refresh_token=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.t4J5wY4aIWBUTTxWp9tjvgd4D_k7i_5pZ5T6jU2jHZ2nq-n53L5zzZeN7HaN5xw2FPigy_5eHxmnPQ9WJupNDkFEDN6WSz4JaBLxPKsDRMbyc_6cg0itqmTZmlLY_I3kzcpUlPTtudm9PoAT0zE2NvSqLA_vFiFA-r9L678oi2CnIwnbYVmKceYMhtH6LmZgdkDLoN7xPI-h9lYW0iEmnY2dW-ZA6mubcNX5Q6WiF5wmO--LzcG1IS0C11ISS8TYX1wEhva86UyfrBRgtRc-AIPHdj-RGlHEU_6adgQkXwNud37BRxFjFdSoHn3RRLMfl84zDeAYYPO79CEpSnZJXw.kahcr4UUsOpMhp8y.nv6cmXtWpLsORgpRwzVks3mDZiyCKWjX_Ml4O5X1o3elzzLGc5N5yXEje5Xgm-KVcB9ULbcekb3iP_1dUPqjLSzJ9FlcLnMsYWq5qfEwLzdObByItg4Kt8qDkMBXn9nc-SF4CTzx9oKqxFmcylJS8b96eyrTuYf0DuiDT5DymxDCA1u0UH2wj3jBwugGAgb0iZab-WrVwSH7nVaWqxCQ3pC6RZXk_IXVj7QYUX1lWTBvSVPiicE_UCG4SLw8tR9svvMYD35u816qZg9a7uyh80hsXSi_vWwDbvXPlXUiDqu9_Cv3TeWh03pZjMPIUnF01BjU7mWxsJLUgE6T8V_fNNP9qY55DObcXm2GyMDZ7i5bppFXqmxG0wwCdQq_mU1KszA6RH_Dpe3arR_OWRxt2Fy36kEsKG_g3ldg0RqpsWahTCExzm4vOQc2sFpMj7lg6miqhyuwR6Xpe8wyfKJ73C2ri1LLRXIfGBpdiuYpxqHZ0ohgjmqd3f8H9G0BmgkHWIYm4Q0_SYXxI4AhwToyIPzbSJJrkSgOX5-btsMtLqhEa4y-2NHhqivX5HnFHfmOwS1_sX-52ib9AMgyhtXw9RrbQ-og0ZUiB5FljRTfUbMphlDxhSAoNnD8nWkbJ92UABPgjx-J0p54-GyYuzUbvVzWbaVQf2-DvB87sCNGAo_-kagws4ySgZ8EOcuGmN_LMkt8g-wa6RZQJ8We6lQeFGwX2z0YlbN4iCvosRI6ppMzXMZesTZGC4JV3-KIvUH0-t_0EMCkM86cBt0X3CLVKJk6Xwa0U0E8OgynlctHeXO2sGMMPga9nQr2oeh91ooFp-JSMRLfyqbxcnOWpx0t6AX8LL_mM0puXH495myMKmUqmBlFoEqqciicSlrInCp-f5lL1C9IoBCmJioh0YkbwTFTUwkvU83wl4quGLFCMUVz5TF0eGcM_prO6KnDZ4jjECsdXqcNRKa9glIQKskyb3JLqsLiNBijG61ApTqmA5vHKBAEFfM-6RxiSj0ZNkeb6WjPF6XqKl82q9uFIWyLHUO42pQOtWdw_MwBi6ZeebOPe2er8FA5wbm3MJP1UevyoiyaIl60CasU6l6rYLRskhGyHhKzQTo34RILfZHzsYQX8gVoZYRBtWSMANa5lOYgIw5gAqpT1ik_MU5zG35GPEioAARvTSRs25MNj5uiGDo2QaFsv3OaSGn1l2sU1XN16s99_nU3Rp0u-lSurJnKge2bsmR5sqLAADsMnX69FMrgggkWf80mrkEAdNYaMaDrv0xaWsQUmlnxIU64zWSfnurILHtFM0T5BcZiE0kE5svbWe3Ez7CawZj3kgjm.dGNEt-cU99F62xgukgWbEA
+
+23:45:58.390 response time in milliseconds: 1705
+1 &lt; 200
+1 &lt; Date: Wed, 16 Aug 2023 18:15:58 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: XSRF-TOKEN=bab1f8d5-7b02-40e1-a6ab-565485cf64cd; Path=/; Secure; HttpOnly; SameSite=Lax
+1 &lt; x-amz-cognito-request-id: e35bf7e5-524b-416d-8a7a-865a98894587
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: Server
+{&quot;id_token&quot;:&quot;eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiT0xISjZaREJqMGNsekFjRU04MkFSUSIsInN1YiI6Ijk4Y2E1NmY4LWZkNDAtNDk5Ny1hOGE4LWRkMjcwMDRhOTU4NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJjb2duaXRvOnVzZXJuYW1lIjoiOThjYTU2ZjgtZmQ0MC00OTk3LWE4YTgtZGQyNzAwNGE5NTg3Iiwib3JpZ2luX2p0aSI6IjU1ZDNlNTM4LWM2M2QtNDhlMS04ZDE5LWUyZjU1MjU5MWNkZCIsImF1ZCI6IjZqaTh2Ym9mZWYyMWdhNmUxb2VwOWlmZWRtIiwiZXZlbnRfaWQiOiI3ZGVhODg4MS0yMWIwLTRkOTYtYjIyMS0zNmUyMTI5MWQ5YmUiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY4ODcyNDE1MSwiZXhwIjoxNjkyMjEzMzU4LCJpYXQiOjE2OTIyMDk3NTgsImp0aSI6IjI0OTgwZThmLTAwOTItNDhjNy04MjI5LWU2OWFkZWEyNDA4NSIsImVtYWlsIjoibWloaXIuYmhhdHRAa2lkZG8uaGVhbHRoIn0.Vl6lcMUuRf59oG64FEYkk1NnV0HJq2jnYm1V72onmIFpEAQFSC1FtS1ZEAv9pO9pBIexzcXkUh_EuCvYyAg1GOurCRn-oLztkGJadZyt4rnmhv-3zPQlHEvn2KtZARaOvcbf7reIB_L12wcD_0cEyMVpnsCh6PR6EjiTWmL9S-yv_n72FHOqBEJhft3Pn4ot2Gle-vVS3qdwVmeg2N6W_ykloJUA24hc62TJKyD8CBU2JzGwK0FkKx2B1PYXJ1VKPfchuMvs4Q-3uS4nhBpZ6ovvwOsWOWJxE_4QH9LK5XEKDPC0eQH_-ShQ6hVdWKcM_yV8NhhKfb8EK4GV7FqpfA&quot;,&quot;access_token&quot;:&quot;eyJraWQiOiJXS1pzQTNvbnFKcjRCMkpCeHh5dVBLNVlzZ0N0Z1dTZm5JQXh2YnpGTElFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5OGNhNTZmOC1mZDQwLTQ5OTctYThhOC1kZDI3MDA0YTk1ODciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2amk4dmJvZmVmMjFnYTZlMW9lcDlpZmVkbSIsIm9yaWdpbl9qdGkiOiI1NWQzZTUzOC1jNjNkLTQ4ZTEtOGQxOS1lMmY1NTI1OTFjZGQiLCJldmVudF9pZCI6IjdkZWE4ODgxLTIxYjAtNGQ5Ni1iMjIxLTM2ZTIxMjkxZDliZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicGhvbmUgb3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNjg4NzI0MTUxLCJleHAiOjE2OTIyMTMzNTgsImlhdCI6MTY5MjIwOTc1OCwianRpIjoiNzQ2MWM5MzEtYWRkNy00N2QwLWI0OGItOTU1ZmY5YjcyMTBmIiwidXNlcm5hbWUiOiI5OGNhNTZmOC1mZDQwLTQ5OTctYThhOC1kZDI3MDA0YTk1ODcifQ.eCKwNFiwrbFtwGykUZkIildX1bgjxBCt5t93CAsOFRlzPbpYZpa_FqFWW7fqbh1FeMrf9ZXH4oJfYBHIKq88YFk8yw_lw6mUhc8tNvQKRTdujYfMMrLAnnHqiOOEFktOfirxC-l6OrdKuw1MtrXMIz9Zrb9lmNM0DRgKHjQOV1Y9CfMXnT0VFaB_M0tZnj5m9Y6MKezjn3fdayQBzNUXaKop2AJlVxnUW-ll1CIIR694lFm5bXKahY-jx4Sjie3U514EvwqX6vSi2qi3Q_mf63kwtlq5vifrKQxOaHSOQ48IkED1Nnfc5FRhOU9_C2iXtwkGP2FDVUUYu1-k1xbSmQ&quot;,&quot;expires_in&quot;:3600,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.25">
+      <div class="step-ref bg-step">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status  200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.17.0.call">
+    <div class="step-container" id="0.17.0.call.0.26">
+      <div class="step-ref bg-step">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authToken = response.id_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = signIn.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getRandomNum =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.20">function(max){ return Math.floor(Math.random() * max) }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref bg-step">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomNum = getRandomNum(9999)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref bg-step">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print randomNum</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">23:45:58.446 [print] 9820 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref bg-step">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def patientEmail = requestPayload1.leads[0].patient.patient_email = &#39;anusha.diwakar+ec&#39;+randomNum+&#39;@kiddo.health&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref bg-step">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parentEmail = requestPayload1.leads[0].emergencyContact.ecEmail = patientEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref bg-step">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print requestPayload1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">23:45:58.459 [print] {
+  &quot;provider_id&quot;: &quot;asdfasdf&quot;,
+  &quot;provider_org_id&quot;: &quot;asdfasdf&quot;,
+  &quot;leads&quot;: [
+    {
+      &quot;patient&quot;: {
+        &quot;firstname&quot;: &quot;Testfname&quot;,
+        &quot;lastname&quot;: &quot;lname&quot;,
+        &quot;gender&quot;: &quot;MAle&quot;,
+        &quot;dob&quot;: &quot;asdf&quot;,
+        &quot;patient_email&quot;: &quot;anusha.diwakar+ec9820@kiddo.health&quot;,
+        &quot;homePhone&quot;: &quot;asdf&quot;,
+        &quot;mobile&quot;: &quot;asdf&quot;,
+        &quot;address&quot;: &quot;asdf&quot;,
+        &quot;state&quot;: &quot;asdfasdf&quot;,
+        &quot;zipCode&quot;: &quot;56009&quot;,
+        &quot;medicalCondition&quot;: [
+          &quot;Asthma&quot;,
+          &quot;Diabetes&quot;
+        ],
+        &quot;payer_id&quot;: &quot;1234&quot;
+      },
+      &quot;emergencyContact&quot;: {
+        &quot;ecFirstName&quot;: &quot;ParFname&quot;,
+        &quot;ecLastName&quot;: &quot;Parlname&quot;,
+        &quot;ecHomePhone&quot;: &quot;asdfasd&quot;,
+        &quot;ecMobile&quot;: &quot;asdfasdf&quot;,
+        &quot;ecWorkNumber&quot;: &quot;asdfasdf&quot;,
+        &quot;ecEmail&quot;: &quot;anusha.diwakar+ec9820@kiddo.health&quot;,
+        &quot;ecRelationship&quot;: &quot;Father&quot;
+      }
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref bg-step">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def passedStatus = props.OK</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path props.leadsPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayload1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print requestPayload1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">23:45:58.462 [print] {
+  &quot;provider_id&quot;: &quot;asdfasdf&quot;,
+  &quot;provider_org_id&quot;: &quot;asdfasdf&quot;,
+  &quot;leads&quot;: [
+    {
+      &quot;patient&quot;: {
+        &quot;firstname&quot;: &quot;Testfname&quot;,
+        &quot;lastname&quot;: &quot;lname&quot;,
+        &quot;gender&quot;: &quot;MAle&quot;,
+        &quot;dob&quot;: &quot;asdf&quot;,
+        &quot;patient_email&quot;: &quot;anusha.diwakar+ec9820@kiddo.health&quot;,
+        &quot;homePhone&quot;: &quot;asdf&quot;,
+        &quot;mobile&quot;: &quot;asdf&quot;,
+        &quot;address&quot;: &quot;asdf&quot;,
+        &quot;state&quot;: &quot;asdfasdf&quot;,
+        &quot;zipCode&quot;: &quot;56009&quot;,
+        &quot;medicalCondition&quot;: [
+          &quot;Asthma&quot;,
+          &quot;Diabetes&quot;
+        ],
+        &quot;payer_id&quot;: &quot;1234&quot;
+      },
+      &quot;emergencyContact&quot;: {
+        &quot;ecFirstName&quot;: &quot;ParFname&quot;,
+        &quot;ecLastName&quot;: &quot;Parlname&quot;,
+        &quot;ecHomePhone&quot;: &quot;asdfasd&quot;,
+        &quot;ecMobile&quot;: &quot;asdfasdf&quot;,
+        &quot;ecWorkNumber&quot;: &quot;asdfasdf&quot;,
+        &quot;ecEmail&quot;: &quot;anusha.diwakar+ec9820@kiddo.health&quot;,
+        &quot;ecRelationship&quot;: &quot;Father&quot;
+      }
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2751</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">23:45:58.470 request:
+1 &gt; POST https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/leads
+1 &gt; Authorization: Bearer eyJraWQiOiJMemxCeWp3bkxHR25EbFVkWFVsMVRhZk9tRlZ3U1c3UnppZVlrZ0lrRktrPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiT0xISjZaREJqMGNsekFjRU04MkFSUSIsInN1YiI6Ijk4Y2E1NmY4LWZkNDAtNDk5Ny1hOGE4LWRkMjcwMDRhOTU4NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9FWWV3NldaQjQiLCJjb2duaXRvOnVzZXJuYW1lIjoiOThjYTU2ZjgtZmQ0MC00OTk3LWE4YTgtZGQyNzAwNGE5NTg3Iiwib3JpZ2luX2p0aSI6IjU1ZDNlNTM4LWM2M2QtNDhlMS04ZDE5LWUyZjU1MjU5MWNkZCIsImF1ZCI6IjZqaTh2Ym9mZWYyMWdhNmUxb2VwOWlmZWRtIiwiZXZlbnRfaWQiOiI3ZGVhODg4MS0yMWIwLTRkOTYtYjIyMS0zNmUyMTI5MWQ5YmUiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY4ODcyNDE1MSwiZXhwIjoxNjkyMjEzMzU4LCJpYXQiOjE2OTIyMDk3NTgsImp0aSI6IjI0OTgwZThmLTAwOTItNDhjNy04MjI5LWU2OWFkZWEyNDA4NSIsImVtYWlsIjoibWloaXIuYmhhdHRAa2lkZG8uaGVhbHRoIn0.Vl6lcMUuRf59oG64FEYkk1NnV0HJq2jnYm1V72onmIFpEAQFSC1FtS1ZEAv9pO9pBIexzcXkUh_EuCvYyAg1GOurCRn-oLztkGJadZyt4rnmhv-3zPQlHEvn2KtZARaOvcbf7reIB_L12wcD_0cEyMVpnsCh6PR6EjiTWmL9S-yv_n72FHOqBEJhft3Pn4ot2Gle-vVS3qdwVmeg2N6W_ykloJUA24hc62TJKyD8CBU2JzGwK0FkKx2B1PYXJ1VKPfchuMvs4Q-3uS4nhBpZ6ovvwOsWOWJxE_4QH9LK5XEKDPC0eQH_-ShQ6hVdWKcM_yV8NhhKfb8EK4GV7FqpfA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 567
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_371)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;provider_id&quot;:&quot;asdfasdf&quot;,&quot;provider_org_id&quot;:&quot;asdfasdf&quot;,&quot;leads&quot;:[{&quot;patient&quot;:{&quot;firstname&quot;:&quot;Testfname&quot;,&quot;lastname&quot;:&quot;lname&quot;,&quot;gender&quot;:&quot;MAle&quot;,&quot;dob&quot;:&quot;asdf&quot;,&quot;patient_email&quot;:&quot;anusha.diwakar+ec9820@kiddo.health&quot;,&quot;homePhone&quot;:&quot;asdf&quot;,&quot;mobile&quot;:&quot;asdf&quot;,&quot;address&quot;:&quot;asdf&quot;,&quot;state&quot;:&quot;asdfasdf&quot;,&quot;zipCode&quot;:&quot;56009&quot;,&quot;medicalCondition&quot;:[&quot;Asthma&quot;,&quot;Diabetes&quot;],&quot;payer_id&quot;:&quot;1234&quot;},&quot;emergencyContact&quot;:{&quot;ecFirstName&quot;:&quot;ParFname&quot;,&quot;ecLastName&quot;:&quot;Parlname&quot;,&quot;ecHomePhone&quot;:&quot;asdfasd&quot;,&quot;ecMobile&quot;:&quot;asdfasdf&quot;,&quot;ecWorkNumber&quot;:&quot;asdfasdf&quot;,&quot;ecEmail&quot;:&quot;anusha.diwakar+ec9820@kiddo.health&quot;,&quot;ecRelationship&quot;:&quot;Father&quot;}}]}
+
+23:46:01.210 response time in milliseconds: 2737
+1 &lt; 400
+1 &lt; Date: Wed, 16 Aug 2023 18:16:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 184
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: a0cbf95a-56c3-4a00-a7fd-8c8fa402da32
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: Jw_O-G9zoAMEdkA=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64dd125f-6661097849d4a2d31e05c1fe;Sampled=0;lineage=d8d2cf2e:0
+{&quot;status&quot;: false, &quot;code&quot;: 400, &quot;message&quot;: &quot;1 validation error for AdaptedRequest&quot;, &quot;data&quot;: {}, &quot;errors&quot;: [{&quot;field&quot;: &quot;patients&quot;, &quot;error_message&quot;: &quot;field required&quot;}], &quot;pagination&quot;: null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref failed">41</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">23:46:01.216 src/test/java/features/postLeads.feature:41
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 2737, url: https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/leads, response: 
+{&quot;status&quot;: false, &quot;code&quot;: 400, &quot;message&quot;: &quot;1 validation error for AdaptedRequest&quot;, &quot;data&quot;: {}, &quot;errors&quot;: [{&quot;field&quot;: &quot;patients&quot;, &quot;error_message&quot;: &quot;field required&quot;}], &quot;pagination&quot;: null}
+src/test/java/features/postLeads.feature:41
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.data.status == &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

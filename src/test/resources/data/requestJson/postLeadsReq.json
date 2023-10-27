@@ -1,0 +1,34 @@
+{
+    "provider_id": "AutomationProvider",
+    "provider_org_id": "90091",
+    "patients": [
+        {
+            "patient": {
+                "firstname": "AutomationPatient",
+                "lastname": "Lastname",
+                "gender": "Male",
+                "dob": "asdf",
+                "patient_email": "anusha.diwakar+ec6666@kiddo.health",
+                "homePhone": "209-285-9852",
+                "mobile": "505-518-3503",
+                "address": "01Address",
+                "state": "California",
+                "zipCode": "95205",
+                "medicalCondition": [
+                    "Asthma",
+                    "Diabetes"
+                ],
+                "payer_id": "1234"
+            },
+            "emergencyContact": {
+                "ecFirstName": "AutomationParent",
+                "ecLastName": "Lastname",
+                "ecHomePhone": "559-550-4091",
+                "ecMobile": "916-988-2753",
+                "ecWorkNumber": "256-622-1310",
+                "ecEmail": "anusha.diwakar+ec6666@kiddo.health",
+                "ecRelationship": "Guardian"
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/postLeads[1:27]","start":1693821359477,"end":1693821371330,"title":"src\/test\/java\/features\/postLeads[1:27] 15:25:59.477-15:26:11.330 Create record with new parent and patient data"},{"id":2,"group":1,"content":"src\/test\/java\/features\/postLeads[2:42]","start":1693821371357,"end":1693821376161,"title":"src\/test\/java\/features\/postLeads[2:42] 15:26:11.357-15:26:16.161 Create record with existing parent and patient data"},{"id":3,"group":1,"content":"src\/test\/java\/features\/postLeads[3:52]","start":1693821376174,"end":1693821380076,"title":"src\/test\/java\/features\/postLeads[3:52] 15:26:16.174-15:26:20.076 Create record with incorrect parent and patient data"},{"id":4,"group":1,"content":"src\/test\/java\/features\/postLeads[4:66]","start":1693821380098,"end":1693821381849,"title":"src\/test\/java\/features\/postLeads[4:66] 15:26:20.098-15:26:21.849 Create record with incorrect method for parent and patient data"},{"id":5,"group":1,"content":"src\/test\/java\/features\/postLeads[5:76]","start":1693821381858,"end":1693821388197,"title":"src\/test\/java\/features\/postLeads[5:76] 15:26:21.858-15:26:28.197 Create record with parent and patient data with other provider"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

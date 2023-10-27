@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("2c83bf2f-33be-48ce-891b-a91f22221982",{name:"anusha"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.features.getOrder</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-08-04 02:17:00 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>get order details</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/getOrder.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Orders</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">get order details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5225</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header APIKey = &#39;apikey &#39;+ authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def  query = {order_id:&#39;64ca2930294f2dca3c104e6d&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = {x-api-key:&#39;4u62oUJEiREEYI8uV42v2mNPMcXeyYW6b0DydgJi&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/stage/order&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5152</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">14:16:55.904 request:
+1 &gt; GET https://opcwb9o4ik.execute-api.us-east-1.amazonaws.com/stage/order?order_id=64ca2930294f2dca3c104e6d
+1 &gt; APIKey: apikey 4u62oUJEiREEYI8uV42v2mNPMcXeyYW6b0DydgJi
+1 &gt; x-api-key: 4u62oUJEiREEYI8uV42v2mNPMcXeyYW6b0DydgJi
+1 &gt; Host: opcwb9o4ik.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:17:00.715 response time in milliseconds: 4806
+1 &lt; 200
+1 &lt; Date: Fri, 04 Aug 2023 08:47:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 2235
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 42e40230-fa15-4e7a-a4dc-53a9f1b3077f
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+1 &lt; x-amz-apigw-id: JIIoTEb5oAMEn-w=
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; X-Amzn-Trace-Id: Root=1-64ccbb01-651ecb3f716a9764300091c9;Sampled=0;lineage=dd76b2cd:0
+{&quot;status&quot;: true, &quot;code&quot;: 200, &quot;message&quot;: &quot;The order was already placed, data returned&quot;, &quot;data&quot;: {&quot;_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;, &quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;, &quot;sku&quot;: &quot;&quot;, &quot;design&quot;: &quot;Dolphin&quot;, &quot;shipping_partner&quot;: null, &quot;shipping_id&quot;: null, &quot;shipping_address&quot;: &quot;60 Cottonwood Avenue&quot;, &quot;shipping_pincode&quot;: null, &quot;shipping_country&quot;: &quot;USA&quot;, &quot;order_delivered_dt&quot;: null, &quot;firstname&quot;: &quot;Anusha&quot;, &quot;surname&quot;: &quot;EC5&quot;, &quot;state&quot;: &quot;California&quot;, &quot;zip&quot;: &quot;95205&quot;, &quot;id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;, &quot;lead&quot;: {&quot;lead_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;, &quot;request_id&quot;: &quot;64ca292e294f2dca3c104e69&quot;, &quot;provider_id&quot;: &quot;ec531280-300c-447a-b7e4-1e18d0c4e445&quot;, &quot;lead_gen_time&quot;: &quot;20230802100016&quot;, &quot;lead_email&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;, &quot;lead_mobile&quot;: &quot;916-988-2753&quot;, &quot;num_patients&quot;: 0, &quot;lead_full_name&quot;: &quot;AnushaEC5&quot;, &quot;lead_type&quot;: &quot;new&quot;, &quot;lead_patient_ids&quot;: &quot;&quot;, &quot;lead_status&quot;: &quot;consideration&quot;, &quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;, &quot;payor&quot;: &quot;123456&quot;}, &quot;lead_mongo_data&quot;: {&quot;_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;, &quot;ecFirstName&quot;: &quot;Anusha&quot;, &quot;ecLastName&quot;: &quot;EC5&quot;, &quot;ecHomePhone&quot;: &quot;559-550-4091&quot;, &quot;ecMobile&quot;: &quot;916-988-2753&quot;, &quot;ecWorkNumber&quot;: &quot;256-622-1310&quot;, &quot;ecEmail&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;, &quot;ecRelationship&quot;: &quot;Guardian&quot;, &quot;id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;}, &quot;order_info&quot;: {&quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;, &quot;lead_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;, &quot;lead_email&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;, &quot;lead_patient_id&quot;: &quot;64ca292f294f2dca3c104e6c&quot;, &quot;request_id&quot;: &quot;64ca292e294f2dca3c104e69&quot;, &quot;order_confirmed_dt&quot;: null, &quot;provider_id&quot;: &quot;ec531280-300c-447a-b7e4-1e18d0c4e445&quot;, &quot;order_status&quot;: &quot;Active&quot;, &quot;order_closed_dt&quot;: null}, &quot;order_status&quot;: {&quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;, &quot;dt_time&quot;: &quot;20230804065836&quot;, &quot;current_status&quot;: &quot;Ordered&quot;}, &quot;patient_data&quot;: {&quot;_id&quot;: &quot;64ca292f294f2dca3c104e6c&quot;, &quot;id&quot;: &quot;64ca292f294f2dca3c104e6c&quot;, &quot;firstname&quot;: &quot;PA&quot;, &quot;lastname&quot;: &quot;Anusha&quot;, &quot;gender&quot;: &quot;Female&quot;, &quot;dob&quot;: &quot;04/04/2004&quot;, &quot;patient_email&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;, &quot;homePhone&quot;: &quot;209-285-9852&quot;, &quot;mobile&quot;: &quot;505-518-3503&quot;, &quot;address&quot;: &quot;60 Cottonwood Avenue&quot;, &quot;state&quot;: &quot;California&quot;, &quot;zipCode&quot;: &quot;95205&quot;, &quot;medicalCondition&quot;: [&quot;Diabetes&quot;, &quot; Asthma&quot;, &quot; randomchecks&quot;], &quot;payer_id&quot;: &quot;123456&quot;, &quot;parent_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;}}, &quot;errors&quot;: [], &quot;pagination&quot;: null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">14:17:00.763 [print] {
+  &quot;status&quot;: true,
+  &quot;code&quot;: 200,
+  &quot;message&quot;: &quot;The order was already placed, data returned&quot;,
+  &quot;data&quot;: {
+    &quot;_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;,
+    &quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;,
+    &quot;sku&quot;: &quot;&quot;,
+    &quot;design&quot;: &quot;Dolphin&quot;,
+    &quot;shipping_partner&quot;: null,
+    &quot;shipping_id&quot;: null,
+    &quot;shipping_address&quot;: &quot;60 Cottonwood Avenue&quot;,
+    &quot;shipping_pincode&quot;: null,
+    &quot;shipping_country&quot;: &quot;USA&quot;,
+    &quot;order_delivered_dt&quot;: null,
+    &quot;firstname&quot;: &quot;Anusha&quot;,
+    &quot;surname&quot;: &quot;EC5&quot;,
+    &quot;state&quot;: &quot;California&quot;,
+    &quot;zip&quot;: &quot;95205&quot;,
+    &quot;id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;,
+    &quot;lead&quot;: {
+      &quot;lead_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;,
+      &quot;request_id&quot;: &quot;64ca292e294f2dca3c104e69&quot;,
+      &quot;provider_id&quot;: &quot;ec531280-300c-447a-b7e4-1e18d0c4e445&quot;,
+      &quot;lead_gen_time&quot;: &quot;20230802100016&quot;,
+      &quot;lead_email&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;,
+      &quot;lead_mobile&quot;: &quot;916-988-2753&quot;,
+      &quot;num_patients&quot;: 0,
+      &quot;lead_full_name&quot;: &quot;AnushaEC5&quot;,
+      &quot;lead_type&quot;: &quot;new&quot;,
+      &quot;lead_patient_ids&quot;: &quot;&quot;,
+      &quot;lead_status&quot;: &quot;consideration&quot;,
+      &quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;,
+      &quot;payor&quot;: &quot;123456&quot;
+    },
+    &quot;lead_mongo_data&quot;: {
+      &quot;_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;,
+      &quot;ecFirstName&quot;: &quot;Anusha&quot;,
+      &quot;ecLastName&quot;: &quot;EC5&quot;,
+      &quot;ecHomePhone&quot;: &quot;559-550-4091&quot;,
+      &quot;ecMobile&quot;: &quot;916-988-2753&quot;,
+      &quot;ecWorkNumber&quot;: &quot;256-622-1310&quot;,
+      &quot;ecEmail&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;,
+      &quot;ecRelationship&quot;: &quot;Guardian&quot;,
+      &quot;id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;
+    },
+    &quot;order_info&quot;: {
+      &quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;,
+      &quot;lead_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;,
+      &quot;lead_email&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;,
+      &quot;lead_patient_id&quot;: &quot;64ca292f294f2dca3c104e6c&quot;,
+      &quot;request_id&quot;: &quot;64ca292e294f2dca3c104e69&quot;,
+      &quot;order_confirmed_dt&quot;: null,
+      &quot;provider_id&quot;: &quot;ec531280-300c-447a-b7e4-1e18d0c4e445&quot;,
+      &quot;order_status&quot;: &quot;Active&quot;,
+      &quot;order_closed_dt&quot;: null
+    },
+    &quot;order_status&quot;: {
+      &quot;order_id&quot;: &quot;64ca2930294f2dca3c104e6d&quot;,
+      &quot;dt_time&quot;: &quot;20230804065836&quot;,
+      &quot;current_status&quot;: &quot;Ordered&quot;
+    },
+    &quot;patient_data&quot;: {
+      &quot;_id&quot;: &quot;64ca292f294f2dca3c104e6c&quot;,
+      &quot;id&quot;: &quot;64ca292f294f2dca3c104e6c&quot;,
+      &quot;firstname&quot;: &quot;PA&quot;,
+      &quot;lastname&quot;: &quot;Anusha&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;dob&quot;: &quot;04/04/2004&quot;,
+      &quot;patient_email&quot;: &quot;anusha.diwakar+ec5@kiddo.health&quot;,
+      &quot;homePhone&quot;: &quot;209-285-9852&quot;,
+      &quot;mobile&quot;: &quot;505-518-3503&quot;,
+      &quot;address&quot;: &quot;60 Cottonwood Avenue&quot;,
+      &quot;state&quot;: &quot;California&quot;,
+      &quot;zipCode&quot;: &quot;95205&quot;,
+      &quot;medicalCondition&quot;: [
+        &quot;Diabetes&quot;,
+        &quot; Asthma&quot;,
+        &quot; randomchecks&quot;
+      ],
+      &quot;payer_id&quot;: &quot;123456&quot;,
+      &quot;parent_id&quot;: &quot;64ca292f294f2dca3c104e6b&quot;
+    }
+  },
+  &quot;errors&quot;: [
+  ],
+  &quot;pagination&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

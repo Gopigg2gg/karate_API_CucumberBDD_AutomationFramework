@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/checkProvider[1:18]","start":1693817047910,"end":1693817054601,"title":"features\/checkProvider[1:18] 14:14:07.910-14:14:14.601 Check if Provider is already registered and confirmed"},{"id":2,"group":2,"content":"features\/checkProvider[2:30]","start":1693817047910,"end":1693817054674,"title":"features\/checkProvider[2:30] 14:14:07.910-14:14:14.674 Check if Provider is not registered"},{"id":3,"group":3,"content":"features\/checkProvider[3:42]","start":1693817047910,"end":1693817051869,"title":"features\/checkProvider[3:42] 14:14:07.910-14:14:11.869 Check if Provider email is invalid"},{"id":4,"group":4,"content":"features\/checkProvider[4:53]","start":1693817047910,"end":1693817051879,"title":"features\/checkProvider[4:53] 14:14:07.910-14:14:11.879 Check if fields are missing in request body"},{"id":5,"group":5,"content":"features\/checkProvider[5:65]","start":1693817047910,"end":1693817050534,"title":"features\/checkProvider[5:65] 14:14:07.910-14:14:10.534 Check if check provider API works with GET method"},{"id":6,"group":5,"content":"features\/order[1:20]","start":1693817050576,"end":1693817056474,"title":"features\/order[1:20] 14:14:10.576-14:14:16.474 To check if Order was already placed"},{"id":7,"group":3,"content":"features\/order[2:34]","start":1693817051893,"end":1693817057421,"title":"features\/order[2:34] 14:14:11.893-14:14:17.421 To check if Order was already placed with non existent order Id"},{"id":8,"group":4,"content":"features\/order[3:48]","start":1693817051893,"end":1693817054590,"title":"features\/order[3:48] 14:14:11.893-14:14:14.590 To check if Order was already placed with no params passed"},{"id":9,"group":4,"content":"features\/order[4:60]","start":1693817054612,"end":1693817055321,"title":"features\/order[4:60] 14:14:14.612-14:14:15.321 To get order details with no order ID given"},{"id":10,"group":1,"content":"features\/orderStatus[1:20]","start":1693817054616,"end":1693817061544,"title":"features\/orderStatus[1:20] 14:14:14.616-14:14:21.544 To change the order status to Shipped"},{"id":11,"group":2,"content":"features\/orderStatus[2:35]","start":1693817054687,"end":1693817057092,"title":"features\/orderStatus[2:35] 14:14:14.687-14:14:17.092 To change the order status with one query parameter missing"},{"id":12,"group":4,"content":"features\/orderStatus[3:46]","start":1693817055348,"end":1693817060279,"title":"features\/orderStatus[3:46] 14:14:15.348-14:14:20.279 To change the order status to Delivered with invalid current status"},{"id":13,"group":5,"content":"features\/orderStatus[4:61]","start":1693817056485,"end":1693817060347,"title":"features\/orderStatus[4:61] 14:14:16.485-14:14:20.347 To check the order status with no data found for order id given"},{"id":14,"group":2,"content":"features\/orderStatus[5:76]","start":1693817057101,"end":1693817062842,"title":"features\/orderStatus[5:76] 14:14:17.101-14:14:22.842 To check the order status with no data found for order id given"},{"id":15,"group":3,"content":"features\/postLeads[1:25]","start":1693817057431,"end":1693817058191,"title":"features\/postLeads[1:25] 14:14:17.431-14:14:18.191 Create record with new parent and patient data","className":"failed"},{"id":16,"group":3,"content":"features\/postLeads[2:40]","start":1693817058201,"end":1693817059021,"title":"features\/postLeads[2:40] 14:14:18.201-14:14:19.021 Create record with existing parent and patient data","className":"failed"},{"id":17,"group":3,"content":"features\/postLeads[3:50]","start":1693817059034,"end":1693817059737,"title":"features\/postLeads[3:50] 14:14:19.034-14:14:19.737 Create record with incorrect parent and patient data","className":"failed"},{"id":18,"group":3,"content":"features\/postLeads[4:64]","start":1693817059744,"end":1693817060424,"title":"features\/postLeads[4:64] 14:14:19.744-14:14:20.424 Create record with incorrect method for parent and patient data"},{"id":19,"group":4,"content":"features\/postLeads[5:74]","start":1693817060284,"end":1693817061010,"title":"features\/postLeads[5:74] 14:14:20.284-14:14:21.010 Create record with parent and patient data with other provider","className":"failed"},{"id":20,"group":5,"content":"features\/validationCode[1:18]","start":1693817060353,"end":1693817066118,"title":"features\/validationCode[1:18] 14:14:20.353-14:14:26.118 Check if otp code is sent"},{"id":21,"group":3,"content":"features\/validationCode[2:31]","start":1693817060428,"end":1693817062797,"title":"features\/validationCode[2:31] 14:14:20.428-14:14:22.797 Check if otp code is sent for invalid email id"},{"id":22,"group":4,"content":"features\/validationCode[3:42]","start":1693817061028,"end":1693817065352,"title":"features\/validationCode[3:42] 14:14:21.028-14:14:25.352 Check if otp code is sent for none existing email id"},{"id":23,"group":1,"content":"features\/validationCode[4:54]","start":1693817061553,"end":1693817063505,"title":"features\/validationCode[4:54] 14:14:21.553-14:14:23.505 Check if otp code is validated with GET method"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

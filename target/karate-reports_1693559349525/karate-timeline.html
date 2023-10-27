@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/checkProvider[1:19]","start":1693559286523,"end":1693559289746,"title":"src\/test\/java\/features\/checkProvider[1:19] 14:38:06.523-14:38:09.746 Check if Provider is already registered and confirmed","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/features\/checkProvider[2:31]","start":1693559289765,"end":1693559291832,"title":"src\/test\/java\/features\/checkProvider[2:31] 14:38:09.765-14:38:11.832 Check if Provider is not registered"},{"id":3,"group":1,"content":"src\/test\/java\/features\/checkProvider[3:43]","start":1693559291842,"end":1693559292633,"title":"src\/test\/java\/features\/checkProvider[3:43] 14:38:11.842-14:38:12.633 Check if Provider email is invalid"},{"id":4,"group":1,"content":"src\/test\/java\/features\/checkProvider[4:54]","start":1693559292642,"end":1693559293471,"title":"src\/test\/java\/features\/checkProvider[4:54] 14:38:12.642-14:38:13.471 Check if fields are missing in request body","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
